@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="bg-secondary"
+ style=" background-image:url(/una-taza-de-javascript.png); background-repeat:no-repeat; background-size: cover; ">
+<header class=" ">
+    <nav class="navbar bg-warning bg-gradient opacity-75">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand text-danger fs-1 " href="#">TAREA</a>
+        </div>
+      </nav>
+</header>
+ 
+   
+      <main class="container col-md-12 align-content-center ">
+        <div class="">
+          <h1 class="d-flex justify-content-center text-light">
+            EJERCICIO 3:
+          </h1>
+          <p class=" text-light">
+             
+CATEGORIA	AUMENTO
+A	15%
+B	30%
+C	10%
+D	20%
+
+Calcular el aumento de trabajador tomando en cuenta la tabla de categorías de aumento. Para este ejercicio deberá html los datos del empleado y el aumento salarial.
+
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-4">
+              <div class="input-group mb-3">
+                <button class="btn btn-outline-danger bg-danger bg-gradient text-black" onclick="mostrarNombre()" type="button" id="button-addon1">Empleado</button>
+                <input type="text" class="form-control bg-info bg-gradient opacity-80" id="nombreEmpleadoInput" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              </div>
+            </div>
+        
+            <div class="col-sm-6 col-md-4">
+              <div class="input-group mb-3">
+                <button class="btn btn-outline-danger bg-danger bg-gradient text-black" onclick="mostrarSalario()" type="button" id="button-addon2">Salario</button>
+                <input type="text" class="form-control bg-info bg-gradient opacity-80" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon2" id="salarioEmpleadoInput">
+              </div>
+            </div>
+        
+            <div class="col-sm-6 col-md-4">
+              <div class="input-group mb-3">
+                <button type="button" class="btn btn-outline-danger bg-info bg-gradient text-black opacity-80">Categoria</button>
+                <button type="button" class="btn btn-outline-danger bg-danger bg-gradient text-black dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu bg-danger bg-gradient">
+                  <li><a class="dropdown-item empleadoA" href="#">Empleado A</a></li>
+                  <li><a class="dropdown-item empleadoB" id="" href="#">Empleado B</a></li>
+                  <li><a class="dropdown-item empleadoC" id="" href="#">Empleado C</a></li>
+                  <li><a class="dropdown-item empleadoD" id="" href="#">Empleado D</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <table class="table caption-top text-light">
+                <caption class="text-danger">Aumento Salarial</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-dark bg-light"></th>
+                    <th scope="col" class="text-dark bg-light">Empleado</th>
+                    <th scope="col" class="text-dark bg-light">Salario Actual</th>
+                    <th scope="col" class="text-dark bg-light">Salarial con Aumento</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-dark bg-light">
+                    <th scope="row"></th>
+                    <td id="nombreEmpleado"></td>
+                    <td id="salarioEmpleado"></td>
+                    <td id="nuevoSalario"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+
+      
+      
+</body>
+<script src="/ejercicio3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>
